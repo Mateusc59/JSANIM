@@ -133,6 +133,10 @@ img {
   transition: all 0.3s;
 }
 
+.logoban {
+  width: 20%;
+}
+
 .nav__links {
   display: flex;
   align-items: center;

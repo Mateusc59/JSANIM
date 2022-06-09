@@ -88,10 +88,10 @@ message.style.height =
 document.documentElement.style.setProperty("--color-primary", "purple");
 
 //Attributes
-const logo = document.querySelector(".nav__logo");
+/* const logo = document.querySelector(".nav__logo");
 console.log(logo.alt);
 console.log(logo.src);
-console.log(logo.className);
+console.log(logo.className); */
 
 logo.alt = "beautiful minimalist logo";
 
@@ -142,6 +142,8 @@ btnScrollTo.addEventListener("click", function (event) {
   ); */
 
   window.scrollTo({
-    left: S1coords,
+    left: S1coords.left + window.pageXOffset,
+    top: S1coords.top + window.pageYOffset,
+    behavior: "smooth",
   });
 });
